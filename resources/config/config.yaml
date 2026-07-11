@@ -1,0 +1,49 @@
+# Configuration file for Test Strategy Project
+# This file contains environment-specific configurations
+
+environments:
+  development:
+    database:
+      host: localhost
+      port: 5432
+      username: test_user
+      password: test_password
+      database: test_db
+      driver: postgresql
+      timeout: 30
+    api:
+      base_url: http://localhost:8000
+      timeout: 10
+  
+  staging:
+    database:
+      host: staging-db.example.com
+      port: 5432
+      username: ${DB_USER}
+      password: ${DB_PASSWORD}
+      database: staging_db
+      driver: postgresql
+      timeout: 30
+    api:
+      base_url: https://staging-api.example.com
+      timeout: 15
+  
+  production:
+    database:
+      host: prod-db.example.com
+      port: 5432
+      username: ${DB_USER}
+      password: ${DB_PASSWORD}
+      database: prod_db
+      driver: postgresql
+      timeout: 30
+    api:
+      base_url: https://api.example.com
+      timeout: 20
+
+# Test Configuration
+test_config:
+  max_retries: 3
+  retry_delay: 2
+  screenshot_on_failure: true
+  log_level: INFO

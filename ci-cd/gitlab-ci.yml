@@ -1,0 +1,150 @@
+stages:
+  - prepare
+  - test
+  - report
+  - deploy
+
+variables:
+  DB_HOST: postgres
+  DB_PORT: 5432
+  DB_NAME: test_db
+  DB_USER: test_user
+  DB_PASSWORD: test_password
+  DOCKER_DRIVER: overlay2
+
+services:
+  - postgres:15-alpine
+
+before_script:
+  - python -m pip install --upgrade pip
+  - pip install -r requirements.txt
+  - python -m playwright install
+
+prepare:install_dependencies:
+  stage: prepare
+  image: python:3.11
+  script:
+    - echo "Installing dependencies..."
+    - pip install -r requirements.txt
+    - python -m playwright install
+  artifacts:
+    paths:
+      - /cache/.pip
+    expire_in: 30 days
+
+test:database_crud:
+  stage: test
+  image: python:3.11
+  services:
+    - postgres:15-alpine
+  variables:
+    POSTGRES_DB: test_db
+    POSTGRES_USER: test_user
+    POSTGRES_PASSWORD: test_password
+    POSTGRES_HOST_AUTH_METHOD: trust
+  before_script:
+    - python -m pip install --upgrade pip
+    - pip install -r requirements.txt
+  script:
+    - robot -d ./reports tests/database/01_CRUD_Operations.robot
+  artifacts:
+    when: always
+    paths:
+      - reports/
+    reports:
+      junit: reports/output.xml
+    expire_in: 30 days
+
+test:database_validation:
+  stage: test
+  image: python:3.11
+  services:
+    - postgres:15-alpine
+  variables:
+    POSTGRES_DB: test_db
+    POSTGRES_USER: test_user
+    POSTGRES_PASSWORD: test_password
+    POSTGRES_HOST_AUTH_METHOD: trust
+  before_script:
+    - python -m pip install --upgrade pip
+    - pip install -r requirements.txt
+  script:
+    - robot -d ./reports tests/database/02_Database_Validation.robot
+  artifacts:
+    when: always
+    paths:
+      - reports/
+    reports:
+      junit: reports/output.xml
+    expire_in: 30 days
+
+test:test_data_management:
+  stage: test
+  image: python:3.11
+  services:
+    - postgres:15-alpine
+  variables:
+    POSTGRES_DB: test_db
+    POSTGRES_USER: test_user
+    POSTGRES_PASSWORD: test_password
+    POSTGRES_HOST_AUTH_METHOD: trust
+  before_script:
+    - python -m pip install --upgrade pip
+    - pip install -r requirements.txt
+  script:
+    - robot -d ./reports tests/database/03_Test_Data_Management.robot
+  artifacts:
+    when: always
+    paths:
+      - reports/
+    reports:
+      junit: reports/output.xml
+    expire_in: 30 days
+
+test:connection_management:
+  stage: test
+  image: python:3.11
+  services:
+    - postgres:15-alpine
+  variables:
+    POSTGRES_DB: test_db
+    POSTGRES_USER: test_user
+    POSTGRES_PASSWORD: test_password
+    POSTGRES_HOST_AUTH_METHOD: trust
+  before_script:
+    - python -m pip install --upgrade pip
+    - pip install -r requirements.txt
+  script:
+    - robot -d ./reports tests/database/04_Connection_Management.robot
+  artifacts:
+    when: always
+    paths:
+      - reports/
+    reports:
+      junit: reports/output.xml
+    expire_in: 30 days
+
+report:allure:
+  stage: report
+  image: frankescobar/allure-docker-service:latest
+  script:
+    - allure generate ./reports --clean -o ./allure-results
+  artifacts:
+    paths:
+      - allure-results/
+    expire_in: 30 days
+  when: always
+
+pages:
+  stage: deploy
+  image: python:3.11
+  dependencies:
+    - report:allure
+  script:
+    - mkdir -p public
+    - cp -r allure-results/* public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

@@ -1,0 +1,31 @@
+# Database configuration templates for different database systems
+
+supported_databases:
+  postgresql:
+    driver: psycopg2
+    port: 5432
+    module: RPA.Database
+    
+  mysql:
+    driver: mysql-connector
+    port: 3306
+    module: RPA.Database
+    
+  sqlite:
+    driver: sqlite3
+    port: null
+    module: RPA.Database
+    
+  mssql:
+    driver: pyodbc
+    port: 1433
+    module: RPA.Database
+
+connection_pools:
+  enabled: true
+  min_connections: 1
+  max_connections: 10
+  timeout: 30
+
+query_timeout: 30
+transaction_isolation: READ_COMMITTED

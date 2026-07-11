@@ -1,0 +1,44 @@
+# Required Python packages for Robot Framework project
+
+# Core Framework
+robotframework==7.0
+robot-framework==7.0
+
+# Database Operations
+RPA-Database==5.0
+
+# Playwright for UI Testing
+playwright==1.40.0
+robotframework-browser==18.1.0
+
+# API Testing
+robotframework-requests==0.9.6
+requests==2.31.0
+
+# Configuration Management
+pyyaml==6.0.1
+python-dotenv==1.0.0
+
+# Reporting
+robotframework-pabot==2.17.0
+allure-robotframework==2.13.2
+
+# Utilities
+python-dateutil==2.8.2
+faker==20.1.0
+
+# Database Drivers
+psycopg2-binary==2.9.9
+mysql-connector-python==8.2.0
+pyodbc==5.0.1
+
+# Code Quality
+pylint==3.0.3
+black==23.12.1
+
+# Testing Utilities
+pytest==7.4.3
+pytest-robot==7.0.0
+
+# SSH Operations
+robotframework-sshlibrary==3.8.0

@@ -1,0 +1,97 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Robot Framework
+reports/
+log.html
+report.html
+output.xml
+*.log
+results/
+allure-results/
+
+# Test Data
+*.tmp
+test_output/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary Files
+*.bak
+*.tmp
+*.temp
+*~
+
+# Logs
+logs/
+*.log
+
+# Node modules (if used for any tooling)
+node_modules/
+
+# Coverage Reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Miscellaneous
+.mypy_cache/
+.dmypy.json
+dmypy.json

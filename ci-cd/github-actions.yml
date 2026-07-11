@@ -1,0 +1,134 @@
+name: Robot Framework Database Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  schedule:
+    - cron: '0 2 * * *'  # Run daily at 2 AM
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    services:
+      postgres:
+        image: postgres:15-alpine
+        env:
+          POSTGRES_USER: test_user
+          POSTGRES_PASSWORD: test_password
+          POSTGRES_DB: test_db
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Install Playwright
+      run: python -m playwright install
+    
+    - name: Wait for PostgreSQL
+      run: |
+        until PGPASSWORD=test_password psql -h localhost -U test_user -d test_db -c "\q"; do
+          >&2 echo "PostgreSQL is unavailable - sleeping"
+          sleep 1
+        done
+    
+    - name: Run Database CRUD Tests
+      run: |
+        robot -d ./reports \
+          --variable DB_HOST:localhost \
+          --variable DB_PORT:5432 \
+          --variable DB_NAME:test_db \
+          --variable DB_USER:test_user \
+          --variable DB_PASSWORD:test_password \
+          tests/database/01_CRUD_Operations.robot
+    
+    - name: Run Database Validation Tests
+      run: |
+        robot -d ./reports \
+          --variable DB_HOST:localhost \
+          --variable DB_PORT:5432 \
+          --variable DB_NAME:test_db \
+          --variable DB_USER:test_user \
+          --variable DB_PASSWORD:test_password \
+          tests/database/02_Database_Validation.robot
+    
+    - name: Run Test Data Management Tests
+      run: |
+        robot -d ./reports \
+          --variable DB_HOST:localhost \
+          --variable DB_PORT:5432 \
+          --variable DB_NAME:test_db \
+          --variable DB_USER:test_user \
+          --variable DB_PASSWORD:test_password \
+          tests/database/03_Test_Data_Management.robot
+    
+    - name: Run Connection Management Tests
+      run: |
+        robot -d ./reports \
+          --variable DB_HOST:localhost \
+          --variable DB_PORT:5432 \
+          --variable DB_NAME:test_db \
+          --variable DB_USER:test_user \
+          --variable DB_PASSWORD:test_password \
+          tests/database/04_Connection_Management.robot
+    
+    - name: Generate Allure Report
+      if: always()
+      run: |
+        allure generate ./reports --clean -o ./allure-results
+    
+    - name: Upload Reports
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: robot-reports
+        path: reports/
+    
+    - name: Publish Test Results
+      if: always()
+      uses: EnricoMi/publish-unit-test-result-action@v2
+      with:
+        files: reports/output.xml
+        check_name: Robot Framework Test Results
+
+  code-quality:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pylint black
+    
+    - name: Run Black formatter check
+      run: black --check .
+    
+    - name: Run PyLint
+      run: pylint keywords/**/*.py --exit-zero

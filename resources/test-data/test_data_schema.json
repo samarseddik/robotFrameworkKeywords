@@ -1,0 +1,76 @@
+{
+  "users": {
+    "table_name": "users",
+    "fields": {
+      "id": {
+        "type": "integer",
+        "primary_key": true,
+        "auto_increment": true
+      },
+      "username": {
+        "type": "varchar(100)",
+        "unique": true,
+        "required": true
+      },
+      "email": {
+        "type": "varchar(255)",
+        "unique": true,
+        "required": true
+      },
+      "password_hash": {
+        "type": "varchar(255)",
+        "required": true
+      },
+      "first_name": {
+        "type": "varchar(100)",
+        "required": false
+      },
+      "last_name": {
+        "type": "varchar(100)",
+        "required": false
+      },
+      "created_at": {
+        "type": "timestamp",
+        "default": "CURRENT_TIMESTAMP"
+      },
+      "updated_at": {
+        "type": "timestamp",
+        "default": "CURRENT_TIMESTAMP"
+      },
+      "is_active": {
+        "type": "boolean",
+        "default": true
+      }
+    }
+  },
+  "products": {
+    "table_name": "products",
+    "fields": {
+      "id": {
+        "type": "integer",
+        "primary_key": true,
+        "auto_increment": true
+      },
+      "name": {
+        "type": "varchar(255)",
+        "required": true
+      },
+      "description": {
+        "type": "text",
+        "required": false
+      },
+      "price": {
+        "type": "decimal(10,2)",
+        "required": true
+      },
+      "quantity": {
+        "type": "integer",
+        "default": 0
+      },
+      "created_at": {
+        "type": "timestamp",
+        "default": "CURRENT_TIMESTAMP"
+      }
+    }
+  }
+}
