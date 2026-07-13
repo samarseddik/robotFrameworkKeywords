@@ -9,8 +9,7 @@ Library          OperatingSystem
 *** Variables ***
 ${DEFAULT_BROWSER}      chromium
 ${DEFAULT_TIMEOUT}      30s
-${DEFAULT_HEADLESS}     False
-${SCREENSHOT_PATH}      ${EMPTY}
+${DEFAULT_HEADLESS}     ${HEADLESS}
 
 *** Keywords ***
 # =============================================================================
