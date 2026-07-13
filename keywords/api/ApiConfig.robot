@@ -27,7 +27,7 @@ Configure Default Headers
     ...            Accept=${accept}
 
     Run Keyword If    ${extra_headers} != ${None}
-    ...    Collections.Update Dictionary    ${headers}    &{extra_headers}
+    ...    Set To Dictionary    ${headers}    &{extra_headers}
 
     Set Suite Variable    &{DEFAULT_HEADERS}    &{headers}
 

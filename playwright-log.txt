@@ -1,0 +1,209 @@
+{"level":30,"time":"2026-07-11T21:29:46.617Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Listening on 127.0.0.1:55182"}
+{"level":30,"time":"2026-07-11T21:29:46.738Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-07-11T21:29:49.062Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Adding browser to stack: chromium, version: 143.0.7499.4"}
+{"level":30,"time":"2026-07-11T21:29:49.080Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-07-11T21:29:49.080Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-07-11T21:29:49.173Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-07-11T21:29:49.174Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"locale\":\"en-US\",\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"timezoneId\":\"UTC\",\"viewport\":{\"width\":1920,\"height\":1080}}"}
+{"level":30,"time":"2026-07-11T21:29:49.174Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@5256c291030e49caf2aa140b4190bde5\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=0d4cd34d-956a-41bd-8a97-5fd92c5d46c0\"}"}
+{"level":30,"time":"2026-07-11T21:29:49.175Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Trace file: "}
+{"level":30,"time":"2026-07-11T21:29:49.278Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Setting default timeout for context context=70b3c289-3052-4483-87a5-f9c3822b8747 to 30000"}
+{"level":30,"time":"2026-07-11T21:29:49.278Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Changed active context: context=70b3c289-3052-4483-87a5-f9c3822b8747"}
+{"level":30,"time":"2026-07-11T21:29:49.279Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method newContext"}
+{"level":30,"time":"2026-07-11T21:29:49.331Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-07-11T21:29:49.332Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@5256c291030e49caf2aa140b4190bde5\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=70b3c289-3052-4483-87a5-f9c3822b8747\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@4da38808573e6018e7584d6749d1efe6\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"locale\":\"en-US\",\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"timezoneId\":\"UTC\",\"viewport\":{\"width\":1920,\"height\":1080}},\"traceFile\":\"\"}],\"id\":\"browser=0d4cd34d-956a-41bd-8a97-5fd92c5d46c0\"}"}
+{"level":30,"time":"2026-07-11T21:29:50.420Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Video path: undefined"}
+{"level":30,"time":"2026-07-11T21:29:50.420Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Changed active page"}
+{"level":30,"time":"2026-07-11T21:29:50.521Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method newPage"}
+{"level":30,"time":"2026-07-11T21:29:50.531Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-07-11T21:29:50.532Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"timeout: 30000 state: networkidle"}
+{"level":30,"time":"2026-07-11T21:29:51.024Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-07-11T21:29:51.049Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:29:51.094Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:29:51.127Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method goTo"}
+{"level":30,"time":"2026-07-11T21:29:57.276Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method goTo"}
+{"level":30,"time":"2026-07-11T21:29:57.288Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-07-11T21:29:57.288Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"timeout: 30000 state: networkidle"}
+{"level":30,"time":"2026-07-11T21:29:57.291Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-07-11T21:29:57.309Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-07-11T21:29:57.310Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:02.534Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:02.543Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:02.542Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:02.613Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:02.623Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:02.623Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:02.633Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:02.642Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:02.642Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:02.681Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:02.691Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:02.691Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:02.705Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:02.711Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:02.711Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:02.774Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:02.801Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method waitForRequest"}
+{"level":30,"time":"2026-07-11T21:30:02.823Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method click"}
+{"level":30,"time":"2026-07-11T21:30:02.824Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with button[type=\"submit\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:02.934Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method waitForRequest"}
+{"level":30,"time":"2026-07-11T21:30:02.940Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method click"}
+{"level":30,"time":"2026-07-11T21:30:02.960Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:02.968Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:02.980Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:03.074Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:03.098Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method goTo"}
+{"level":30,"time":"2026-07-11T21:30:03.539Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method goTo"}
+{"level":30,"time":"2026-07-11T21:30:03.553Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-07-11T21:30:03.553Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"timeout: 30000 state: networkidle"}
+{"level":30,"time":"2026-07-11T21:30:06.282Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-07-11T21:30:06.303Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:06.304Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:06.422Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:06.427Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:06.427Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:06.469Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:06.474Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:06.474Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:06.478Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:06.483Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:06.483Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:06.510Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:06.517Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:06.518Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:06.523Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:06.526Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:06.527Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:06.554Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:06.561Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method click"}
+{"level":30,"time":"2026-07-11T21:30:06.562Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with button[type=\"submit\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:06.647Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method click"}
+{"level":30,"time":"2026-07-11T21:30:06.897Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"responseChunks.length: 1"}
+{"level":30,"time":"2026-07-11T21:30:06.898Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Sending response Response received"}
+{"level":30,"time":"2026-07-11T21:30:06.931Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:06.934Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:06.940Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:06.946Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:06.970Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method goTo"}
+{"level":30,"time":"2026-07-11T21:30:07.094Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method goTo"}
+{"level":30,"time":"2026-07-11T21:30:07.099Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-07-11T21:30:07.099Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"timeout: 30000 state: networkidle"}
+{"level":30,"time":"2026-07-11T21:30:08.176Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-07-11T21:30:08.197Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:08.197Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:08.337Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:08.347Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:08.347Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:08.388Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:08.393Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:08.393Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:08.397Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:08.402Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:08.402Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:08.430Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:08.437Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:08.437Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:08.443Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:08.446Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:08.446Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:08.475Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:08.484Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method click"}
+{"level":30,"time":"2026-07-11T21:30:08.485Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with button[type=\"submit\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:08.578Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method click"}
+{"level":30,"time":"2026-07-11T21:30:08.790Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"responseChunks.length: 1"}
+{"level":30,"time":"2026-07-11T21:30:08.790Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Sending response Response received"}
+{"level":30,"time":"2026-07-11T21:30:08.820Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:08.826Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:08.832Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:08.836Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:08.857Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method goTo"}
+{"level":30,"time":"2026-07-11T21:30:09.151Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method goTo"}
+{"level":30,"time":"2026-07-11T21:30:09.157Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-07-11T21:30:09.158Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"timeout: 30000 state: networkidle"}
+{"level":30,"time":"2026-07-11T21:30:10.334Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-07-11T21:30:10.352Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:10.352Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:10.497Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:10.505Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:10.505Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:10.561Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:10.568Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:10.568Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:10.572Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:10.576Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:10.576Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:10.612Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:10.620Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:10.620Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:10.626Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:10.630Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:10.630Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:10.664Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:10.673Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method waitForRequest"}
+{"level":30,"time":"2026-07-11T21:30:10.687Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method click"}
+{"level":30,"time":"2026-07-11T21:30:10.687Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with button[type=\"submit\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:10.768Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method waitForRequest"}
+{"level":30,"time":"2026-07-11T21:30:10.771Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method click"}
+{"level":30,"time":"2026-07-11T21:30:10.777Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:10.779Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:10.786Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:10.788Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:10.803Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method goTo"}
+{"level":30,"time":"2026-07-11T21:30:10.911Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method goTo"}
+{"level":30,"time":"2026-07-11T21:30:10.918Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-07-11T21:30:10.918Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"timeout: 30000 state: networkidle"}
+{"level":30,"time":"2026-07-11T21:30:11.716Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-07-11T21:30:11.725Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:11.725Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:11.792Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:11.796Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:11.796Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:11.833Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method clearText"}
+{"level":30,"time":"2026-07-11T21:30:11.837Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:11.837Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:11.844Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:11.848Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:11.848Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"email\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:11.878Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:11.887Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:11.887Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:11.893Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-07-11T21:30:11.897Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:11.897Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:11.932Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method fillText"}
+{"level":30,"time":"2026-07-11T21:30:11.943Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method click"}
+{"level":30,"time":"2026-07-11T21:30:11.943Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Strict mode is enabled, find Locator with button[type=\"submit\"] in page."}
+{"level":30,"time":"2026-07-11T21:30:12.024Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method click"}
+{"level":30,"time":"2026-07-11T21:30:12.235Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"responseChunks.length: 1"}
+{"level":30,"time":"2026-07-11T21:30:12.235Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Sending response Response received"}
+{"level":30,"time":"2026-07-11T21:30:12.272Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:12.276Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:12.293Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:12.296Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:12.327Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method goTo"}
+{"level":30,"time":"2026-07-11T21:30:12.453Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method goTo"}
+{"level":30,"time":"2026-07-11T21:30:12.459Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-07-11T21:30:12.459Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"timeout: 30000 state: networkidle"}
+{"level":30,"time":"2026-07-11T21:30:13.408Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-07-11T21:30:13.498Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:13.510Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:13.519Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-07-11T21:30:13.573Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Removed page=b38a4188-9cb2-460d-b78f-c808bf353da5 from context=70b3c289-3052-4483-87a5-f9c3822b8747 page stack"}
+{"level":30,"time":"2026-07-11T21:30:15.173Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method closeAllBrowsers"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Lenovo\AppData\Local\Programs\Python\Python314\Lib\site-packages\Browser\wrapper\index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Lenovo\AppData\Local\Programs\Python\Python314\Lib\site-packages\Browser\wrapper\index.js:13622:59)
+    at PlaywrightServer.setTimeout (C:\Users\Lenovo\AppData\Local\Programs\Python\Python314\Lib\site-packages\Browser\wrapper\index.js:13873:57)
+    at Object.onReceiveHalfClose (C:\Users\Lenovo\AppData\Local\Programs\Python\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Lenovo\AppData\Local\Programs\Python\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Lenovo\AppData\Local\Programs\Python\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Lenovo\AppData\Local\Programs\Python\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:529:35)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2026-07-11T21:30:15.187Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:15.187Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-07-11T21:30:17.126Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-07-11T21:30:17.126Z","pid":11368,"hostname":"DESKTOP-RJGUA4M","msg":"End of node method closeAllBrowsers"}

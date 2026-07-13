@@ -7,7 +7,7 @@ Library          DateTime
 Library          Collections
 Library          String
 Library          BuiltIn
-Resource         fileLogger.robot
+Resource         FileLogger.robot
 
 *** Keywords ***
 Format Timestamp

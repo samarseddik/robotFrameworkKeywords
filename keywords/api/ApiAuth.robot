@@ -12,7 +12,7 @@ ${AUTH_TYPE}            ${None}
 ${AUTH_TOKEN}           ${None}
 ${AUTH_API_KEY}         ${None}
 ${AUTH_API_KEY_NAME}    X-API-Key
-&{AUTH_HEADERS}         ${EMPTY}
+&{AUTH_HEADERS}         &{EMPTY}
 
 
 *** Keywords ***
@@ -113,7 +113,6 @@ Clear Auth
 
 Merge Auth With Headers
     [Documentation]    Merges authentication headers with any additional headers provided.
-    ...                Returns the combined headers dictionary ready to pass to a request keyword.
     [Arguments]    ${extra_headers}=${None}
 
     Should Not Be Equal    ${AUTH_TYPE}    ${None}
@@ -122,6 +121,6 @@ Merge Auth With Headers
     ${merged}=    Copy Dictionary    ${AUTH_HEADERS}
 
     Run Keyword If    ${extra_headers} != ${None}
-    ...    Collections.Update Dictionary    ${merged}    &{extra_headers}
+    ...    Set To Dictionary    ${merged}    &{extra_headers}
 
     RETURN    ${merged}
