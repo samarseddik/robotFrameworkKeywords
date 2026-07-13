@@ -153,10 +153,10 @@ Scroll To Bottom
 
 
 Scroll To Element
-    [Documentation]    Scrolls to a specific element on the page.
     [Arguments]    ${selector}    ${behavior}=${DEFAULT_SCROLL_BEHAVIOR}
 
-    Evaluate JavaScript    ${selector}    element.scrollIntoView({behavior: '${behavior}'})
+    Evaluate JavaScript    ${selector}
+    ...    (el) => el.scrollIntoView({behavior: '${behavior}'})
 
     Log    Scrolled to element: ${selector}    level=INFO
 
