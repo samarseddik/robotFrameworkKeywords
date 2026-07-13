@@ -50,7 +50,8 @@ Close All Browser Sessions
 Get Browser Version
     [Documentation]    Returns the current browser version.
 
-    ${version}=    Evaluate JavaScript    ${None}    navigator.userAgent
+    ${version}=    Evaluate JavaScript    ${None}
+    ...    navigator.userAgent || 'unknown'
 
     Log    Browser version: ${version}    level=INFO
 
